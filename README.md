@@ -26,3 +26,25 @@ A primeira base de dados, que pode ser encontrada no [link](https://www.kaggle.c
 Já a segunda base de dados, que pode ser encontrada no [link](https://www.kaggle.com/datasets/mathurinache/iris-augmented), contém cerca de 1.000.000 de dados gerados com CTGAN, uma técnica de aprendizado de máquina que utiliza de redes generativas adversárias (GANs) para sintetizar dados tabulares com características semelhantes aos dados originais. GANs são um tipo de rede neural que consiste em duas partes: um gerador que cria amostra de dados sintéticos e um discriminador que avalia a autenticidade das amostras geradas em comparação com os dados reais. O CTGAN é uma implementação específica de GANs para dados tabulares, onde a rede neural do gerador é projetada para produzir linhas de uma tabela, e a rede neural do discriminador avalia a autenticidade da tabela como um todo.
 
 . Por fim, a terceira base de dados utilizada foi gerada artificialmente pelo grupo utilizando de uma API chamada Gretel. Esta API utiliza o algoritmo chamado “Gretel Synthetics”, que também é baseado em técnicas de rede generativa adversarial. A partir dos dados originais (DataSet 1), a plataforma treina um modelo GAN que gera dados sintéticos que se assemelham aos dados originais, mas não contêm informações identificáveis dos indivíduos ou entidades nos dados. Inicialmente, o modelo é treinado para gerar dados sintéticos que sejam estatisticamente semelhantes ao dados originais, para posteriormente, refinar esse modelo e produzir dados sintéticos que atendam a critérios específicos de privacidade, como a remoção de informações identificáveis e a preservação de padrões e relacionamentos importantes nos dados.
+
+### Resultados
+#### Acurácias
+
+![Acurácia classificadores 1 milhão de registros](https://github.com/Viniciusog/ai-iris-dataset/blob/main/images/Acur%C3%A1cia%20dos%20classificadores.%201%20milh%C3%A3o%20(1).png)
+
+![Acurácia classificadores de 150 registros](https://github.com/Viniciusog/ai-iris-dataset/blob/main/images/Acur%C3%A1cia%20dos%20classificadores.%20150%20registros.png)
+
+*O dataset sintético foi criado a partir dos dados do dataset de 150 registros para tentar obter melhores resultados*
+![Acurácia dos classificadores para o dataset sintético de 5000 registros ](https://github.com/Viniciusog/ai-iris-dataset/blob/main/images/Acur%C3%A1cia%20dos%20classificadores.%20Sint%C3%A9tico.png)
+
+#### F1-Score, Precision, Recall
+
+![f1-score-precision-recall-1m-registros](https://github.com/Viniciusog/ai-iris-dataset/blob/main/images/F1-Score%2C%20Precision%2C%20Recall%20-%20Dataset%201%20de%20milh%C3%A3o%20de%20registros%20(1).png)
+
+![f1-score-precision-recall-150-registros](https://github.com/Viniciusog/ai-iris-dataset/blob/main/images/F1-Score%2C%20Precision%2C%20Recall.%20Dataset%20150%20registros%20(1).png)
+
+![f1-score-precision-recall-sintetico-5000-registros](https://github.com/Viniciusog/ai-iris-dataset/blob/main/images/F1-Score%2C%20Precision%2C%20Recall%20-%20Dataset%20aumentado%20(2).png)
+
+
+
+
